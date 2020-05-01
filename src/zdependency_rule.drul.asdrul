@@ -1,0 +1,4 @@
+DEFINE FILTER DEPENDENCY RULE zdependency_rule
+  ON demo_parts_1
+    IF { demo_parts_1.value > $1 }
+      THEN { demo_parts_1.area = $1 } 
